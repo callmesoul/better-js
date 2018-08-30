@@ -41,15 +41,17 @@ var handleWindowError = function (_window, config) {
                 title: msg,
                 msg: error.stack,
                 category: 'js',
-                level: 'error'
+                level: 'error',
+                line: line,
+                col:col
             });
         } else if (typeof msg === 'string') {
             config.sendError({
                 title: msg,
                 msg: JSON.stringify({
                     resourceUrl: url,
-                    rowNum: line,
-                    colNum: col
+                    line: line,
+                    col:col
                 }),
                 category: 'js',
                 level: 'error'

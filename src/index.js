@@ -76,4 +76,4 @@ if (!betterJs) {
 }
 
 _window.betterJs = betterJs;
-module.exports = betterJs;
+export default betterJs;

@@ -1,10 +1,10 @@
 {
-  "name": "better-js",
-  "version": "1.0.0",
+  "name": "frontend-sniper",
+  "version": "0.0.2",
   "description": "for better js",
-  "main": "index.js",
+  "main": "dist/frontend-sniper.js",
   "scripts": {
-    "test": "nodemon test/main.js",
+    "test": "nodemon test/frontend-sniper.js",
     "build": "webpack --mode=production"
   },
   "repository": {
