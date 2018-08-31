@@ -16,7 +16,7 @@ if (!betterJs) {
             ajaxError: true,
             consoleError: false, // console.error默认不处理
             scriptError: false, // 跨域js错误，默认不处理，因为没有任何信息
-            vue: false,
+            vue: true,
             autoReport: true,
             filters: [], // 过滤器，命中的不上报
             levels: ['info', 'warning', 'error'],

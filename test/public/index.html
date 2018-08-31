@@ -6,18 +6,19 @@
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <!--end-->
         <!--start 打包后的js文件// dist/main.js-->
-        <script src="./frontend-sniper.js"></script>
+        <script src="frontend-sniper.js"></script>
         <!--end-->
         <!--start init window.betterJs 配置sendError，使用fetch发送错误信息-->       
         <script>
             window.betterJs.init({
                     vue: true,
                     sendError: function (error) {
-                        fetch('./sendError', {
+                        fetch('http://127.0.0.1:7001/createError', {
                             method: 'POST',
-                            credentials: 'include',
                             headers: {
-                                'Content-Type': 'application/json'
+                                'Content-Type': 'application/json',
+                                'appId':'57796b60-acea-11e8-a7af-59bf9415bc27',
+                                'appScrect':'57796b61-acea-11e8-a7af-59bf9415bc27'
                             },
                             body: JSON.stringify({
                                 date: new Date(),

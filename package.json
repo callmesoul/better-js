@@ -4,7 +4,7 @@
   "description": "for better js",
   "main": "dist/frontend-sniper.js",
   "scripts": {
-    "test": "nodemon test/frontend-sniper.js",
+    "test": "nodemon test/main.js",
     "build": "webpack --mode=production"
   },
   "repository": {
