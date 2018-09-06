@@ -1,6 +1,6 @@
 {
   "name": "frontend-sniper",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "for better js",
   "main": "dist/frontend-sniper.js",
   "scripts": {
